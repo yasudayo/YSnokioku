@@ -1,0 +1,73 @@
+#gamen {
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    left: 300px;
+    top: 80px;
+}
+h1 {
+    position: absolute;
+    left: 45%;
+}
+#hajimeru {
+    position: absolute;
+    left: 30%;
+    bottom: 15%;
+}
+#start {
+    position: absolute;
+    left: 45%;
+    bottom: 15%;
+}
+#rule {
+    position: absolute;
+    right: 30%;
+    bottom: 15%;
+}
+#ruletext {
+    position: absolute;
+    text-align: center;
+    left: 26%;
+    top: 38%;
+}
+#red {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 2%;
+    top: 2%;
+    cursor: pointer;
+}
+#bule {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+}
+#yellow {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 2%;
+    bottom: 2%;
+    cursor: pointer;
+}
+#green {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 2%;
+    bottom: 2%;
+    cursor: pointer;
+}
+#meirei {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    left: 20%;
+    top: 45%;
+}
+
