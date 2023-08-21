@@ -30,31 +30,50 @@ function main2() {
             let mondai = Math.floor(Math.random() * mondais.length);
 
             if (mondais[mondai] === "red") {
+                reds.animate([
+                    {background: '#ff0000'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                reds.style.backgroundColor = "red";
                 hikatta.push(mondais[mondai]);
             } else {
                 reds.style.backgroundColor = "white";
             }
             if (mondais[mondai] === "blue") {
+                blues.animate([
+                    {background: '#0000ff'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                blues.style.backgroundColor = "blue";
                 hikatta.push(mondais[mondai]);
             } else {
                 blues.style.backgroundColor = "white";
             }
             if (mondais[mondai] === "yellow") {
+                yellows.animate([
+                    {background: '#ffff00'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                yellows.style.backgroundColor = "yellow";
                 hikatta.push(mondais[mondai]);
             } else {
                 yellows.style.backgroundColor = "white";
             }
             if (mondais[mondai] === "green") {
+                greens.animate([
+                    {background:'#008000'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                greens.style.backgroundColor = "green";
                 hikatta.push(mondais[mondai]);
-
             } else {
                 greens.style.backgroundColor = "white";
             }
@@ -378,31 +397,50 @@ function main2() {
             let mondai = Math.floor(Math.random() * mondais.length);
 
             if (mondais[mondai] === "red") {
+                reds.animate([
+                    {background: '#ff0000'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                reds.style.backgroundColor = "red";
                 hikatta.push(mondais[mondai]);
             } else {
                 reds.style.backgroundColor = "white";
             }
             if (mondais[mondai] === "blue") {
+                blues.animate([
+                    {background: '#0000ff'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                blues.style.backgroundColor = "blue";
                 hikatta.push(mondais[mondai]);
             } else {
                 blues.style.backgroundColor = "white";
             }
             if (mondais[mondai] === "yellow") {
+                yellows.animate([
+                    {background: '#ffff00'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                yellows.style.backgroundColor = "yellow";
                 hikatta.push(mondais[mondai]);
             } else {
                 yellows.style.backgroundColor = "white";
             }
             if (mondais[mondai] === "green") {
+                greens.animate([
+                    {background:'#008000'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                greens.style.backgroundColor = "green";
                 hikatta.push(mondais[mondai]);
-
             } else {
                 greens.style.backgroundColor = "white";
             }
@@ -772,31 +810,50 @@ function main2() {
             let mondai = Math.floor(Math.random() * mondais.length);
 
             if (mondais[mondai] === "red") {
+                reds.animate([
+                    {background: '#ff0000'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                reds.style.backgroundColor = "red";
                 hikatta.push(mondais[mondai]);
             } else {
                 reds.style.backgroundColor = "white";
             }
             if (mondais[mondai] === "blue") {
+                blues.animate([
+                    {background: '#0000ff'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                blues.style.backgroundColor = "blue";
                 hikatta.push(mondais[mondai]);
             } else {
                 blues.style.backgroundColor = "white";
             }
             if (mondais[mondai] === "yellow") {
+                yellows.animate([
+                    {background: '#ffff00'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                yellows.style.backgroundColor = "yellow";
                 hikatta.push(mondais[mondai]);
             } else {
                 yellows.style.backgroundColor = "white";
             }
             if (mondais[mondai] === "green") {
+                greens.animate([
+                    {background:'#008000'},
+                    {background:'#fff'},
+                ],{
+                    duration: 1000,
+                })
                 hikariSe.play();
-                greens.style.backgroundColor = "green";
                 hikatta.push(mondais[mondai]);
-
             } else {
                 greens.style.backgroundColor = "white";
             }
