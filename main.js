@@ -30,12 +30,12 @@ function hajimeru() {
     startbutton.style.display = 'block'
     hajimeruyo = true;
     gamen.style.backgroundColor = "black";
-    reds.style.backgroundColor = "#f5f5f5";
-    blues.style.backgroundColor = "#f5f5f5";
-    yellows.style.backgroundColor = "#f5f5f5";
-    greens.style.backgroundColor = "#f5f5f5";
+    reds.style.backgroundColor = "white";
+    blues.style.backgroundColor = "white";
+    yellows.style.backgroundColor = "white";
+    greens.style.backgroundColor = "white";
     meireis.style.color = "white";
-    meireis.innerText = "STARTボタンを押してね。"
+    meireis.innerText = "STARTボタンを押してください。"
     hajimeruSe.play();
     hajimeru1.remove();
     rule1.remove();
@@ -71,29 +71,49 @@ function start() {
                 let mondai = Math.floor(Math.random() * mondais.length);
 
                 if (mondais[mondai] === "red") {
+                    reds.animate([
+                        { background: '#ff0000' },
+                        { background: '#fff' },
+                    ], {
+                        duration: 1000,
+                    })
                     hikariSe.play();
-                    reds.style.backgroundColor = "red";
                     hikatta.push(mondais[mondai]);
                 } else {
                     reds.style.backgroundColor = "white";
                 }
                 if (mondais[mondai] === "blue") {
+                    blues.animate([
+                        { background: '#0000ff' },
+                        { background: '#fff' },
+                    ], {
+                        duration: 1000,
+                    })
                     hikariSe.play();
-                    blues.style.backgroundColor = "blue";
                     hikatta.push(mondais[mondai]);
                 } else {
                     blues.style.backgroundColor = "white";
                 }
                 if (mondais[mondai] === "yellow") {
+                    yellows.animate([
+                        { background: '#ffff00' },
+                        { background: '#fff' },
+                    ], {
+                        duration: 1000,
+                    })
                     hikariSe.play();
-                    yellows.style.backgroundColor = "yellow";
                     hikatta.push(mondais[mondai]);
                 } else {
                     yellows.style.backgroundColor = "white";
                 }
                 if (mondais[mondai] === "green") {
+                    greens.animate([
+                        { background: '#008000' },
+                        { background: '#fff' },
+                    ], {
+                        duration: 1000,
+                    })
                     hikariSe.play();
-                    greens.style.backgroundColor = "green";
                     hikatta.push(mondais[mondai]);
 
                 } else {
@@ -119,8 +139,11 @@ function start() {
                         startSe.play();
                         count2;
                         timer = setInterval(seikou1, 1000);
+                        startSe.play();
                         reds.style.backgroundColor = "white";
+                        startSe.play();
                         answer = [];
+                        startSe.play();
                     } else {
                         keikokuSe.play();
                         alert("チャレンジ失敗");
@@ -129,16 +152,19 @@ function start() {
                 }
                 function bule() {
                     if (hikatta[0] === "blue") {
-                        blues.style.backgroundColor = "blue";
+                       blues.style.backgroundColor = 'blue';
                         hikariSe.play();
                         answer.push("blue");
                         alert("成功　LEVEL2");
                         startSe.play();
                         count2;
                         timer = setInterval(seikou1, 1000);
+                        startSe.play();
                         blues.style.backgroundColor = "white";
+                        startSe.play();
                         answer = [];
-                       
+                        startSe.play();
+
                     } else {
                         keikokuSe.play();
                         alert("チャレンジ失敗");
@@ -147,16 +173,18 @@ function start() {
                 }
                 function yellow() {
                     if (hikatta[0] === "yellow") {
-                        yellows.style.backgroundColor = "yellow";
+                        yellows.style.backgroundColor = "yellow"
                         hikariSe.play();
                         answer.push("yellow");
                         alert("成功　LEVEL2");
                         startSe.play();
                         count2;
-
                         timer = setInterval(seikou1, 1000);
+                        startSe.play();
                         yellows.style.backgroundColor = "white";
+                        startSe.play();
                         answer = [];
+                        startSe.play();
                     } else {
                         keikokuSe.play();
                         alert("チャレンジ失敗");
@@ -172,8 +200,11 @@ function start() {
                         startSe.play();
                         count2;
                         timer = setInterval(seikou1, 1000);
+                        startSe.play();
                         greens.style.backgroundColor = "white";
+                        startSe.play();
                         answer = [];
+                        startSe.play();
                     } else {
                         keikokuSe.play();
                         alert("チャレンジ失敗");
@@ -194,24 +225,24 @@ function start() {
                 yellows.style.backgroundColor = "yellow", greens.style.backgroundColor = "green"];
                 let mondai = Math.floor(Math.random() * mondais.length);
 
-                if (mondais[mondai] === "red") {//選ばれたのが赤だったら
+                if (mondais[mondai] === "red") {
                     reds.animate([
-                        {background: '#ff0000'},
-                        {background:'#fff'},
-                    ],{
-                        duration: 1000,//1秒間の間で点滅する。
+                        { background: '#ff0000' },
+                        { background: '#fff' },
+                    ], {
+                        duration: 1000,
                     })
                     hikariSe.play();
                     hikatta.push(mondais[mondai]);
                 } else {
                     reds.style.backgroundColor = "white";
                 }
-                if (mondais[mondai] === "blue") {//選ばれたのが青だったら
+                if (mondais[mondai] === "blue") {
                     blues.animate([
-                        {background: '#0000ff'},
-                        {background:'#fff'},
-                    ],{
-                        duration: 1000,//1秒間の間で点滅する。
+                        { background: '#0000ff' },
+                        { background: '#fff' },
+                    ], {
+                        duration: 1000,
                     })
                     hikariSe.play();
                     hikatta.push(mondais[mondai]);
@@ -220,9 +251,9 @@ function start() {
                 }
                 if (mondais[mondai] === "yellow") {
                     yellows.animate([
-                        {background: '#ffff00'},
-                        {background:'#fff'},
-                    ],{
+                        { background: '#ffff00' },
+                        { background: '#fff' },
+                    ], {
                         duration: 1000,
                     })
                     hikariSe.play();
@@ -232,9 +263,9 @@ function start() {
                 }
                 if (mondais[mondai] === "green") {
                     greens.animate([
-                        {background:'#008000'},
-                        {background:'#fff'},
-                    ],{
+                        { background: '#008000' },
+                        { background: '#fff' },
+                    ], {
                         duration: 1000,
                     })
                     hikariSe.play();
@@ -256,11 +287,23 @@ function start() {
                 greens.onclick = green2;
 
                 function red2() {
-                    if (hikatta[0] === "red"&& answer.length === 0) {
+                     reds.style.backgroundColor = "red";
+                    blues.style.backgroundColor = "white";
+                    yellows.style.backgroundColor = "white";
+                    greens.style.backgroundColor = "white";
+                    if (hikatta[0] === "red" && answer.length === 0) {
+                         reds.style.backgroundColor = "red";
+                    blues.style.backgroundColor = "white";
+                    yellows.style.backgroundColor = "white";
+                    greens.style.backgroundColor = "white";
                         reds.style.backgroundColor = "red";
                         hikariSe.play();
                         answer.push("red");
-                    } else if (hikatta[1] === "red"&& answer.length === 1) {
+                    } else if (hikatta[1] === "red" && answer.length === 1) {
+                         reds.style.backgroundColor = "red";
+                        blues.style.backgroundColor = "white";
+                    yellows.style.backgroundColor = "white";
+                    greens.style.backgroundColor = "white";
                         reds.style.backgroundColor = "red";
                         hikariSe.play();
                         answer.push("red");
@@ -278,14 +321,27 @@ function start() {
                         timer = setInterval(seikou2, 1000);
                         answer = [];
                         startSe.play();
+                        reds.style.backgroundColor = "white";
                     }
                 }
                 function bule2() {
-                    if (hikatta[0] === "blue"&& answer.length === 0) {
+                        reds.style.backgroundColor = "white";
+                    blues.style.backgroundColor = "blue";
+                    yellows.style.backgroundColor = "white";
+                    greens.style.backgroundColor = "white";
+                    if (hikatta[0] === "blue" && answer.length === 0) {
+                          reds.style.backgroundColor = "white";
+                    blues.style.backgroundColor = "blue";
+                    yellows.style.backgroundColor = "white";
+                    greens.style.backgroundColor = "white";
                         blues.style.backgroundColor = "blue";
                         hikariSe.play();
                         answer.push("blue");
-                    } else if (hikatta[1] === "blue"&& answer.length === 1) {
+                    } else if (hikatta[1] === "blue" && answer.length === 1) {
+                          reds.style.backgroundColor = "white";
+                    blues.style.backgroundColor = "blue";
+                    yellows.style.backgroundColor = "white";
+                    greens.style.backgroundColor = "white";
                         blues.style.backgroundColor = "blue";
                         hikariSe.play();
                         answer.push("blue");
@@ -304,14 +360,27 @@ function start() {
                         timer = setInterval(seikou2, 1000);
                         answer = [];
                         startSe.play();
+                        blues.style.backgroundColor = "white";
                     }
                 }
                 function yellow2() {
-                    if (hikatta[0] === "yellow"&& answer.length === 0) {
+                      reds.style.backgroundColor = "white";
+                    blues.style.backgroundColor = "white";
+                    yellows.style.backgroundColor = "yellow";
+                    greens.style.backgroundColor = "white";
+                    if (hikatta[0] === "yellow" && answer.length === 0) {
+                         reds.style.backgroundColor = "white";
+                    blues.style.backgroundColor = "white";
+                    yellows.style.backgroundColor = "yellow";
+                    greens.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "yellow";
                         hikariSe.play();
                         answer.push("yellow");
-                    } else if (hikatta[1] === "yellow"&& answer.length === 1) {
+                    } else if (hikatta[1] === "yellow" && answer.length === 1) {
+                         reds.style.backgroundColor = "white";
+                    blues.style.backgroundColor = "white";
+                    yellows.style.backgroundColor = "yellow";
+                    greens.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "yellow";
                         hikariSe.play();
                         answer.push("yellow");
@@ -329,14 +398,27 @@ function start() {
                         timer = setInterval(seikou2, 1000);
                         answer = [];
                         startSe.play();
+                        yellows.style.backgroundColor = "white";
                     }
                 }
                 function green2() {
+                    reds.style.backgroundColor = "white";
+                    blues.style.backgroundColor = "white";
+                    yellows.style.backgroundColor = "white";
+                    greens.style.backgroundColor = "green";
                     if (hikatta[0] === "green" && answer.length === 0) {
+                        reds.style.backgroundColor = "white";
+                    blues.style.backgroundColor = "white";
+                    yellows.style.backgroundColor = "white";
+                    greens.style.backgroundColor = "green";
                         greens.style.backgroundColor = "green";
                         hikariSe.play();
                         answer.push("green");
-                    } else if (hikatta[1] === "green"&& answer.length === 1) {
+                    } else if (hikatta[1] === "green" && answer.length === 1) {
+                        reds.style.backgroundColor = "white";
+                    blues.style.backgroundColor = "white";
+                    yellows.style.backgroundColor = "white";
+                    greens.style.backgroundColor = "green";
                         greens.style.backgroundColor = "green";
                         hikariSe.play();
                         answer.push("green");
@@ -354,6 +436,7 @@ function start() {
                         timer = setInterval(seikou2, 1000);
                         answer = [];
                         startSe.play();
+                        greens.style.backgroundColor = "white";
 
                     }
                 }
@@ -373,9 +456,9 @@ function start() {
                 let mondai = Math.floor(Math.random() * mondais.length);
                 if (mondais[mondai] === "red") {
                     reds.animate([
-                        {background: '#ff0000'},
-                        {background:'#fff'},
-                    ],{
+                        { background: '#ff0000' },
+                        { background: '#fff' },
+                    ], {
                         duration: 1000,
                     })
                     hikariSe.play();
@@ -385,9 +468,9 @@ function start() {
                 }
                 if (mondais[mondai] === "blue") {
                     blues.animate([
-                        {background: '#0000ff'},
-                        {background:'#fff'},
-                    ],{
+                        { background: '#0000ff' },
+                        { background: '#fff' },
+                    ], {
                         duration: 1000,
                     })
                     hikariSe.play();
@@ -397,9 +480,9 @@ function start() {
                 }
                 if (mondais[mondai] === "yellow") {
                     yellows.animate([
-                        {background: '#ffff00'},
-                        {background:'#fff'},
-                    ],{
+                        { background: '#ffff00' },
+                        { background: '#fff' },
+                    ], {
                         duration: 1000,
                     })
                     hikariSe.play();
@@ -409,9 +492,9 @@ function start() {
                 }
                 if (mondais[mondai] === "green") {
                     greens.animate([
-                        {background:'#008000'},
-                        {background:'#fff'},
-                    ],{
+                        { background: '#008000' },
+                        { background: '#fff' },
+                    ], {
                         duration: 1000,
                     })
                     hikariSe.play();
@@ -489,7 +572,7 @@ function start() {
                         greens.style.backgroundColor = "white";
                         hikariSe.play();
                         answer.push("blue");
-                    } else if (hikatta[1] === "blue"&& answer.length === 1) {
+                    } else if (hikatta[1] === "blue" && answer.length === 1) {
                         blues.style.backgroundColor = "blue";
                         reds.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
@@ -498,7 +581,7 @@ function start() {
                         answer.push("blue");
                         blues.style.backgroundColor = "blue";
 
-                    } else if (hikatta[2] === "blue"&& answer.length === 2) {
+                    } else if (hikatta[2] === "blue" && answer.length === 2) {
                         blues.style.backgroundColor = "blue";
                         reds.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
@@ -529,14 +612,14 @@ function start() {
                     reds.style.backgroundColor = "white";
                     blues.style.backgroundColor = "white";
                     greens.style.backgroundColor = "white";
-                    if (hikatta[0] === "yellow"&& answer.length === 0) {
+                    if (hikatta[0] === "yellow" && answer.length === 0) {
                         yellows.style.backgroundColor = "yellow";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
                         greens.style.backgroundColor = "white";
                         hikariSe.play();
                         answer.push("yellow");
-                    } else if (hikatta[1] === "yellow"&& answer.length === 1) {
+                    } else if (hikatta[1] === "yellow" && answer.length === 1) {
                         yellows.style.backgroundColor = "yellow";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
@@ -548,7 +631,7 @@ function start() {
                         blues.style.backgroundColor = "white";
                         greens.style.backgroundColor = "white";
 
-                    } else if (hikatta[2] === "yellow"&& answer.length === 2) {
+                    } else if (hikatta[2] === "yellow" && answer.length === 2) {
                         yellows.style.backgroundColor = "yellow";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
@@ -579,14 +662,14 @@ function start() {
                     reds.style.backgroundColor = "white";
                     blues.style.backgroundColor = "white";
                     yellows.style.backgroundColor = "white";
-                    if (hikatta[0] === "green"&& answer.length === 0) {
+                    if (hikatta[0] === "green" && answer.length === 0) {
                         greens.style.backgroundColor = "green";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
                         hikariSe.play();
                         answer.push("green");
-                    } else if (hikatta[1] === "green"&& answer.length === 1) {
+                    } else if (hikatta[1] === "green" && answer.length === 1) {
                         greens.style.backgroundColor = "green";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
@@ -598,7 +681,7 @@ function start() {
                         blues.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
 
-                    } else if (hikatta[2] === "green"&& answer.length === 2) {
+                    } else if (hikatta[2] === "green" && answer.length === 2) {
                         greens.style.backgroundColor = "green";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
@@ -641,9 +724,9 @@ function start() {
 
                 if (mondais[mondai] === "red") {
                     reds.animate([
-                        {background: '#ff0000'},
-                        {background:'#fff'},
-                    ],{
+                        { background: '#ff0000' },
+                        { background: '#fff' },
+                    ], {
                         duration: 1000,
                     })
                     hikariSe.play();
@@ -653,9 +736,9 @@ function start() {
                 }
                 if (mondais[mondai] === "blue") {
                     blues.animate([
-                        {background: '#0000ff'},
-                        {background:'#fff'},
-                    ],{
+                        { background: '#0000ff' },
+                        { background: '#fff' },
+                    ], {
                         duration: 1000,
                     })
                     hikariSe.play();
@@ -665,9 +748,9 @@ function start() {
                 }
                 if (mondais[mondai] === "yellow") {
                     yellows.animate([
-                        {background: '#ffff00'},
-                        {background:'#fff'},
-                    ],{
+                        { background: '#ffff00' },
+                        { background: '#fff' },
+                    ], {
                         duration: 1000,
                     })
                     hikariSe.play();
@@ -677,9 +760,9 @@ function start() {
                 }
                 if (mondais[mondai] === "green") {
                     greens.animate([
-                        {background:'#008000'},
-                        {background:'#fff'},
-                    ],{
+                        { background: '#008000' },
+                        { background: '#fff' },
+                    ], {
                         duration: 1000,
                     })
                     hikariSe.play();
@@ -707,11 +790,11 @@ function start() {
                     blues.style.backgroundColor = "white";
                     yellows.style.backgroundColor = "white";
                     greens.style.backgroundColor = "white";
-                    if (hikatta[0] === "red"&& answer.length === 0) {
+                    if (hikatta[0] === "red" && answer.length === 0) {
                         reds.style.backgroundColor = "red";
                         hikariSe.play();
                         answer.push("red");
-                    } else if (hikatta[1] === "red"&& answer.length === 1) {
+                    } else if (hikatta[1] === "red" && answer.length === 1) {
                         reds.style.backgroundColor = "red";
                         blues.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
@@ -720,7 +803,7 @@ function start() {
                         answer.push("red");
                         reds.style.backgroundColor = "red";
 
-                    } else if (hikatta[2] === "red"&& answer.length === 2) {
+                    } else if (hikatta[2] === "red" && answer.length === 2) {
                         reds.style.backgroundColor = "red";
                         blues.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
@@ -731,7 +814,7 @@ function start() {
                         blues.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
                         greens.style.backgroundColor = "white";
-                    } else if (hikatta[3] === "red"&& answer.length === 3) {
+                    } else if (hikatta[3] === "red" && answer.length === 3) {
                         reds.style.backgroundColor = "red";
                         blues.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
@@ -754,19 +837,19 @@ function start() {
                         reds.style.backgroundColor = "white";
                     }
                 }
-                function bule4 () {
+                function bule4() {
                     blues.style.backgroundColor = "blue";
                     reds.style.backgroundColor = "white";
                     yellows.style.backgroundColor = "white";
                     greens.style.backgroundColor = "white";
-                    if (hikatta[0] === "blue"&& answer.length === 0) {
+                    if (hikatta[0] === "blue" && answer.length === 0) {
                         blues.style.backgroundColor = "blue";
                         reds.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
                         greens.style.backgroundColor = "white";
                         hikariSe.play();
                         answer.push("blue");
-                    } else if (hikatta[1] === "blue"&& answer.length === 1) {
+                    } else if (hikatta[1] === "blue" && answer.length === 1) {
                         blues.style.backgroundColor = "blue";
                         reds.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
@@ -775,19 +858,7 @@ function start() {
                         answer.push("blue");
                         blues.style.backgroundColor = "blue";
 
-                    } else if (hikatta[2] === "blue"&& answer.length === 2) {
-                        blues.style.backgroundColor = "blue";
-                        reds.style.backgroundColor = "white";
-                        yellows.style.backgroundColor = "white";
-                        greens.style.backgroundColor = "white";
-                        hikariSe.play();
-                        answer.push("blue");
-                        blues.style.backgroundColor = "blue";
-                        reds.style.backgroundColor = "white";
-                        yellows.style.backgroundColor = "white";
-                        greens.style.backgroundColor = "white";
-
-                    } else if (hikatta[3] === "blue"&& answer.length === 3) {
+                    } else if (hikatta[2] === "blue" && answer.length === 2) {
                         blues.style.backgroundColor = "blue";
                         reds.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
@@ -799,7 +870,19 @@ function start() {
                         yellows.style.backgroundColor = "white";
                         greens.style.backgroundColor = "white";
 
-                    }  else {
+                    } else if (hikatta[3] === "blue" && answer.length === 3) {
+                        blues.style.backgroundColor = "blue";
+                        reds.style.backgroundColor = "white";
+                        yellows.style.backgroundColor = "white";
+                        greens.style.backgroundColor = "white";
+                        hikariSe.play();
+                        answer.push("blue");
+                        blues.style.backgroundColor = "blue";
+                        reds.style.backgroundColor = "white";
+                        yellows.style.backgroundColor = "white";
+                        greens.style.backgroundColor = "white";
+
+                    } else {
                         keikokuSe.play();
                         alert("チャレンジ失敗");
                         document.location.reload();
@@ -811,19 +894,19 @@ function start() {
                         blues.style.backgroundColor = "white";
                     }
                 }
-                function yellow4 () {
+                function yellow4() {
                     yellows.style.backgroundColor = "yellow";
                     reds.style.backgroundColor = "white";
                     blues.style.backgroundColor = "white";
                     greens.style.backgroundColor = "white";
-                    if (hikatta[0] === "yellow"&& answer.length === 0) {
+                    if (hikatta[0] === "yellow" && answer.length === 0) {
                         yellows.style.backgroundColor = "yellow";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
                         greens.style.backgroundColor = "white";
                         hikariSe.play();
                         answer.push("yellow");
-                    } else if (hikatta[1] === "yellow"&& answer.length === 1) {
+                    } else if (hikatta[1] === "yellow" && answer.length === 1) {
                         yellows.style.backgroundColor = "yellow";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
@@ -835,7 +918,7 @@ function start() {
                         blues.style.backgroundColor = "white";
                         greens.style.backgroundColor = "white";
 
-                    } else if (hikatta[2] === "yellow"&& answer.length === 2) {
+                    } else if (hikatta[2] === "yellow" && answer.length === 2) {
                         yellows.style.backgroundColor = "yellow";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
@@ -846,7 +929,7 @@ function start() {
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
                         greens.style.backgroundColor = "white";
-                    } else if (hikatta[3] === "yellow"&& answer.length === 3) {
+                    } else if (hikatta[3] === "yellow" && answer.length === 3) {
                         yellows.style.backgroundColor = "yellow";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
@@ -867,22 +950,22 @@ function start() {
                         alert("成功　LEVEL5");
                         main2();
                         yellows.style.backgroundColor = "white";
-                        
+
                     }
                 }
-                function green4 () {
+                function green4() {
                     greens.style.backgroundColor = "green";
                     reds.style.backgroundColor = "white";
                     blues.style.backgroundColor = "white";
                     yellows.style.backgroundColor = "white";
-                    if (hikatta[0] === "green"&& answer.length === 0) {
+                    if (hikatta[0] === "green" && answer.length === 0) {
                         greens.style.backgroundColor = "green";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
                         hikariSe.play();
                         answer.push("green");
-                    } else if (hikatta[1] === "green"&& answer.length === 1) {
+                    } else if (hikatta[1] === "green" && answer.length === 1) {
                         greens.style.backgroundColor = "green";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
@@ -894,7 +977,7 @@ function start() {
                         blues.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
 
-                    } else if (hikatta[2] === "green"&& answer.length === 2) {
+                    } else if (hikatta[2] === "green" && answer.length === 2) {
                         greens.style.backgroundColor = "green";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
@@ -905,7 +988,7 @@ function start() {
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
                         yellows.style.backgroundColor = "white";
-                    }  else if (hikatta[3] === "green"&& answer.length === 3) {
+                    } else if (hikatta[3] === "green" && answer.length === 3) {
                         greens.style.backgroundColor = "green";
                         reds.style.backgroundColor = "white";
                         blues.style.backgroundColor = "white";
